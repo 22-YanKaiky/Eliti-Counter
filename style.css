@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Nunito", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div.container > h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+div.container > form > article > h1 {
+    font-size: 5rem;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="button"] {
+    width: 10%;
+    margin: 15px;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgb(28, 28, 255);
+}
+
+input[type="button"]:hover {
+    background-color: rgb(74, 74, 255);
+    transition: 0.3s;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.03);
+}
+
+@media (max-width: 800px) and (min-width: 600) {
+    div.buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input[type="button"] {
+        width: 25%;
+        margin: 15px;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 13pt;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 8px;
+        background-color: rgb(28, 28, 255);
+    }
+}
+
+@media (max-width: 599px) and (min-width: 300) {
+    div.buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input[type="button"] {
+        width: 50%;
+        margin: 15px;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 13pt;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 8px;
+        background-color: rgb(28, 28, 255);
+    }
+}
